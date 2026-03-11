@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samen Sterk Tegen Kanker | Bewustwording & Hoop</title>
-    <meta name="description" content="Een platform gewijd aan het verspreiden van bewustwording over kanker, het delen van verhalen en het bieden van steun in Nederland.">
+    <title>De Kankergids | Ondersteuning & Inspiratie</title>
+    <meta name="description" content="Een gids voor leven met kanker: gezonde recepten, bewegingstips en verhalen van hoop.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,12 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Samen<span>Sterk</span></div>
+            <div class="logo">De<span>Kankergids</span></div>
             <ul class="nav-links">
-                <li><a href="#impact">De Impact</a></li>
-                <li><a href="#bewustwording">Bewustwording</a></li>
-                <li><a href="#helpen">Hoe kun je helpen?</a></li>
+                <li><a href="#intro">Over ons</a></li>
+                <li><a href="#recepten">Recepten</a></li>
+                <li><a href="#lifestyle">Leefstijl</a></li>
+                <li><a href="#ervaringen">Ervaringen</a></li>
                 <li><a href="#contact" class="btn-primary">Contact</a></li>
             </ul>
         </nav>
@@ -25,83 +26,115 @@
 
     <main>
         <section id="hero">
-            <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <h1>Samen bouwen we aan een <br><span>hoopvolle toekomst.</span></h1>
-                <p>Kanker raakt ons allemaal. Door bewustwording te vergroten en elkaar te steunen, maken we een verschil in de strijd tegen deze ziekte.</p>
+                <h1>Samen vinden we <br><span>kracht en balans.</span></h1>
+                <p>Een helpende hand voor iedereen die te maken krijgt met darmkanker. Focus op wat wél kan.</p>
                 <div class="hero-btns">
-                    <a href="#bewustwording" class="btn-primary">Leer meer</a>
-                    <a href="#helpen" class="btn-secondary">Word vrijwilliger</a>
+                    <a href="#recepten" class="btn-primary">Ontdek recepten</a>
+                    <a href="#lifestyle" class="btn-secondary">Leefstijl tips</a>
                 </div>
             </div>
         </section>
 
-        <section id="impact" class="section-padding">
+        <section id="intro" class="section-padding">
+            <div class="container">
+                <div class="intro-content">
+                    <h2>Beste lezers,</h2>
+                    <p>Hoe je het ook draait of keert, darmkanker is een bijzonder ingrijpende diagnose, zowel voor uzelf als voor uw familie en naasten. Van het ene moment op het andere kan het leven er helemaal anders uitzien. Plots wordt u geconfronteerd met nieuwe uitdagingen, onzekerheden en veranderingen in het dagelijkse leven.</p>
+                    <p>U moet leren omgaan met behandelingen, maar ook opnieuw leren luisteren naar uw lichaam, anders leren bewegen en bewuster leren eten. In deze periode kan het soms moeilijk zijn om te weten waar te beginnen of hoe u stap voor stap opnieuw een evenwicht kunt vinden. Daarom willen wij met deze gids een helpende hand bieden.</p>
+                    <div class="glass-box-wide">
+                        <p>Ons doel is om u te ondersteunen en te inspireren, zodat deze moeilijke periode net iets draaglijker en leefbaarder wordt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recepten" class="section-padding bg-light">
             <div class="container">
                 <div class="section-header">
-                    <h2>De Impact van Kanker</h2>
-                    <p>In Nederland krijgt 1 op de 3 mensen ooit de diagnose kanker. Het begrijpen van de cijfers helpt ons de urgentie van preventie en onderzoek in te zien.</p>
+                    <h2>Gezonde & Krachtige Recepten</h2>
+                    <p>Smaakvolle, eiwitrijke gerechten die zijn aangepast aan de noden van uw lichaam tijdens het herstel.</p>
                 </div>
-                <div class="impact-grid">
-                    <div class="impact-card">
-                        <h3>Vroegtijdige Opsporing</h3>
-                        <p>Wanneer kanker in een vroeg stadium wordt ontdekt, zijn de overlevingskansen vaak aanzienlijk groter.</p>
+                <div class="recipe-grid">
+                    <div class="recipe-card">
+                        <div class="recipe-image" style="background-color: #d4a373;">🍽️</div>
+                        <div class="recipe-info">
+                            <span class="recipe-tag">Eiwitrijk</span>
+                            <h3>Pompoen Kruidcake</h3>
+                            <div class="recipe-stats">
+                                <span>174 kcal</span>
+                                <span>2.3g Eiwit</span>
+                            </div>
+                            <p>Een heerlijke cake met witte chocolade en verse pompoen. Perfect als voedzaam tussendoortje.</p>
+                            <button class="btn-text btn-modal" data-target="modal-cake">Bekijk recept →</button>
+                        </div>
                     </div>
-                    <div class="impact-card">
-                        <h3>Preventie</h3>
-                        <p>Ongeveer 40% van de gevallen van kanker kan worden voorkomen door een gezondere levensstijl.</p>
+                    <div class="recipe-card">
+                        <div class="recipe-image" style="background-color: #7c9a92;">🥣</div>
+                        <div class="recipe-info">
+                            <span class="recipe-tag">Snack</span>
+                            <h3>Geroosterde Kikkererwten</h3>
+                            <div class="recipe-stats">
+                                <span>165 kcal</span>
+                                <span>8g Eiwit</span>
+                            </div>
+                            <p>Een pittige en krokante snack, rijk aan vezels en eiwitten. Eenvoudig te bereiden.</p>
+                            <button class="btn-text btn-modal" data-target="modal-kikkererwten">Bekijk recept →</button>
+                        </div>
                     </div>
-                    <div class="impact-card">
-                        <h3>Onderzoek</h3>
-                        <p>Dankzij wetenschappelijk onderzoek overleven steeds meer mensen de ziekte en verbetert de kwaliteit van leven.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="bewustwording" class="section-padding bg-light">
-            <div class="container">
-                <div class="bewust-content">
-                    <div class="bewust-text">
-                        <h2>Wist je dat?</h2>
-                        <ul>
-                            <li><strong>Regelmatige controle</strong> cruciaal is voor de meeste vormen van kanker.</li>
-                            <li><strong>Gezonde voeding</strong> en beweging het risico aanzienlijk kunnen verlagen.</li>
-                            <li><strong>Symptomen herkennen</strong> levensreddend kan zijn. Luister altijd naar je lichaam.</li>
-                        </ul>
-                    </div>
-                    <div class="bewust-visual">
-                        <!-- Placeholder for visual animation or image -->
-                        <div class="glass-box">
-                            <p>"Hoop is de kracht die ons verbindt."</p>
+                    <div class="recipe-card">
+                        <div class="recipe-image" style="background-color: #5b756d;">🥘</div>
+                        <div class="recipe-info">
+                            <span class="recipe-tag">Maaltijd</span>
+                            <h3>Paprika-Wortelsoep</h3>
+                            <div class="recipe-stats">
+                                <span>Rijk aan vezels</span>
+                                <span>Vitamineboost</span>
+                            </div>
+                            <p>Romige soep van geroosterde gele paprika met een pesto van zongedroogde tomaten.</p>
+                            <button class="btn-text btn-modal" data-target="modal-soep">Bekijk recept →</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="helpen" class="section-padding">
+        <section id="lifestyle" class="section-padding">
+            <div class="container">
+                <div class="lifestyle-layout">
+                    <div class="lifestyle-text">
+                        <h2>Leefstijl & Bewegen</h2>
+                        <p>Kleine stappen kunnen een groot verschil maken voor uw fysieke en mentale welzijn. We werken met "ri-di-cuul kleine stapjes" die succeservaringen garanderen.</p>
+                        <ul class="check-list">
+                            <li><strong>Beweging:</strong> Haalbare bewegingsschema's die passen bij uw tempo.</li>
+                            <li><strong>Als-dan plannen:</strong> Gebruik "als-dan-plannen" om therapieontrouw tegen te gaan en routines vast te leggen.</li>
+                            <li><strong>Mindfulness:</strong> Rust inbouwen om beter om te gaan met stress en vermoeidheid.</li>
+                            <li><strong>Routines:</strong> Omzetten van handelingen naar automatische gewoonten voor meer rust.</li>
+                        </ul>
+                    </div>
+                    <div class="lifestyle-visual">
+                        <div class="stat-box">
+                            <span class="stat-number">22</span>
+                            <p>nieuwe diagnoses per dag</p>
+                        </div>
+                        <div class="stat-box accent">
+                            <span class="stat-number">40%</span>
+                            <p>kan voorkomen worden</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ervaringen" class="section-padding bg-light">
             <div class="container">
                 <div class="section-header">
-                    <h2>Hoe kun je helpen?</h2>
-                    <p>Iedereen kan een steentje bijdragen. Jouw inzet, hoe klein ook, heeft impact.</p>
+                    <h2>Verhalen van Hoop</h2>
+                    <p>U staat er niet alleen voor. Lees ervaringen van anderen die een gelijkaardig pad bewandelen.</p>
                 </div>
-                <div class="help-grid">
-                    <div class="help-item">
-                        <div class="icon">💙</div>
-                        <h4>Doneren</h4>
-                        <p>Steun wetenschappelijk onderzoek en projecten die de zorg voor patiënten verbeteren.</p>
-                    </div>
-                    <div class="help-item">
-                        <div class="icon">🤝</div>
-                        <h4>Vrijwilligerswerk</h4>
-                        <p>Zet je talenten in om evenementen te organiseren of patiënten te ondersteunen.</p>
-                    </div>
-                    <div class="help-item">
-                        <div class="icon">📢</div>
-                        <h4>Deel je verhaal</h4>
-                        <p>Door ervaringen te delen, doorbreken we het taboe en bieden we steun aan anderen.</p>
-                    </div>
+                <div class="testimonial-box">
+                    <p>"In het begin wist ik niet hoe ik mijn leven moest aanpassen. Deze gids gaf me de concrete handvaten die ik nodig had, stap voor stap."</p>
+                    <span class="author">— Chris, 54 jaar</span>
                 </div>
             </div>
         </section>
@@ -110,29 +143,151 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-info">
-                <div class="logo">Samen<span>Sterk</span></div>
-                <p>Een initiatief voor een wereld zonder kanker.</p>
+                <div class="logo">De<span>Kankergids</span></div>
+                <p>Ondersteuning voor een kwaliteitsvoller leven.</p>
             </div>
             <div class="footer-links">
-                <h4>Links</h4>
+                <h4>Navigatie</h4>
                 <ul>
-                    <li><a href="#impact">Impact</a></li>
-                    <li><a href="#bewustwording">Informatie</a></li>
-                    <li><a href="#helpen">Help mee</a></li>
+                    <li><a href="#intro">Over ons</a></li>
+                    <li><a href="#recepten">Recepten</a></li>
+                    <li><a href="#lifestyle">Leefstijl</a></li>
                 </ul>
             </div>
-            <div class="footer-social">
-                <h4>Volg ons</h4>
-                <div class="social-icons">
-                    <span>FB</span> <span>IG</span> <span>TW</span>
-                </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Heeft u vragen of wilt u uw verhaal delen?</p>
+                <a href="mailto:info@dekankergids.be" class="btn-text">info@dekankergids.be</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Samen Sterk Bewustwordingsplatform. Alle rechten voorbehouden.</p>
+            <p>&copy; 2026 De Kankergids. Gebaseerd op projectopdracht Gezondheidspromotie.</p>
         </div>
     </footer>
 
+    <!-- Recipe Modals -->
+    <div id="modal-cake" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="recipe-header">
+                    <h2>Pompoen Kruidcake</h2>
+                    <div class="recipe-stats-large">
+                        <div class="stat"><span>Calorieën</span> 174</div>
+                        <div class="stat"><span>Eiwit</span> 2.3g</div>
+                        <div class="stat"><span>Vet</span> 4.5g</div>
+                        <div class="stat"><span>Vezels</span> 1.2g</div>
+                        <div class="stat"><span>Koolhydraten</span> 29.3g</div>
+                    </div>
+                </div>
+                <div class="recipe-main">
+                    <div class="ingredients">
+                        <h3>Ingrediënten</h3>
+                        <ul>
+                            <li>400 gram pompoen, in blokjes</li>
+                            <li>1 theelepel zout</li>
+                            <li>450 gram kruidcake mix</li>
+                            <li>200 ml lauwwarm water</li>
+                            <li>1 eetlepel sinaasappelrasp</li>
+                            <li>1 theelepel citroenrasp</li>
+                            <li>75 gram witte chocolade</li>
+                            <li>75 gram melk chocolade, niet te fijn gehakt</li>
+                        </ul>
+                    </div>
+                    <div class="preparation">
+                        <h3>Bereidingswijze</h3>
+                        <ol>
+                            <li>Verwarm de oven voor op 150 °C en bekleed een bakvorm met bakpapier.</li>
+                            <li>Kook de pompoen in ongeveer 12 minuten gaar in een pan met water en zout. Giet de pompoen af en stamp het daarna met een pureestamper.</li>
+                            <li>Meng de kruidcake mix met het lauwwarme water tot een glad deeg. Spatel de puree van pompoen erdoor.</li>
+                            <li>Schep het beslag in de beklede bakvorm en bak de cake in ongeveer 60 minuten gaar.</li>
+                            <li>Haal de cake uit de oven en laat afkoelen. Smelt de witte chocolade au bain marie.</li>
+                            <li>Maak strepen over de cake met de gesmolten chocolade en strooi de melkchocolade erover.</li>
+                        </ol>
+                        <p class="tip"><strong>Tip!</strong> Ook lekker met pure chocolade in plaats van witte chocolade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-kikkererwten" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="recipe-header">
+                    <h2>Geroosterde Kikkererwten</h2>
+                    <div class="recipe-stats-large">
+                        <div class="stat"><span>Calorieën</span> 165</div>
+                        <div class="stat"><span>Eiwit</span> 8g</div>
+                        <div class="stat"><span>Vet</span> 5.1g</div>
+                        <div class="stat"><span>Vezels</span> 7.3g</div>
+                        <div class="stat"><span>Koolhydraten</span> 18.2g</div>
+                    </div>
+                </div>
+                <div class="recipe-main">
+                    <div class="ingredients">
+                        <h3>Ingrediënten</h3>
+                        <ul>
+                            <li>400 gram kikkererwten uit blik</li>
+                            <li>1 eetlepel olijfolie</li>
+                            <li>1 theelepel paprikapoeder</li>
+                            <li>1 theelepel knoflookpoeder</li>
+                            <li>1 theelepel chilipoeder</li>
+                            <li>Zout naar smaak</li>
+                        </ul>
+                    </div>
+                    <div class="preparation">
+                        <h3>Bereidingswijze</h3>
+                        <ol>
+                            <li>Verwarm de oven voor op 200 °C.</li>
+                            <li>Spoel de kikkererwten af en laat ze goed uitlekken en drogen.</li>
+                            <li>Meng alle ingrediënten goed door elkaar en leg op een bakplaat.</li>
+                            <li>Bak de kikkererwten in 20 minuten knapperig.</li>
+                            <li>Zet de oven terug naar 120 °C en bak ze nog 10 á 15 minuten.</li>
+                        </ol>
+                        <p class="tip"><strong>Tip!</strong> Maximaal 3 dagen te bewaren in een gesloten luchtdichte trommel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-soep" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="recipe-header">
+                    <h2>Paprika-Wortelsoep</h2>
+                    <p class="recipe-warning">Dit recept is rijk aan calorieën en/of eiwitten om herstel te ondersteunen.</p>
+                </div>
+                <div class="recipe-main">
+                    <div class="ingredients">
+                        <h3>Ingrediënten</h3>
+                        <ul>
+                            <li>2 el olijfolie, 3 grote gele paprika's</li>
+                            <li>1 bos jonge wortelen, 2 uien, 2 teentjes knoflook</li>
+                            <li>1,5 l bouillon, 1 tl kerriepoeder</li>
+                            <li>150 g zongedroogde tomaten, 2 el pijnboompitten</li>
+                            <li>Parmezaanse kaas, 100 ml olijfolie, citroensap</li>
+                        </ul>
+                    </div>
+                    <div class="preparation">
+                        <h3>Bereidingswijze</h3>
+                        <ol>
+                            <li>Rooster paprika's, wortelen en uien met knoflook en kerrie in de oven op 200°C gedurende 20 min.</li>
+                            <li>Mix de groenten met warme bouillon tot een gladde soep.</li>
+                            <li>Maak pesto: hak zongedroogde tomaten, kaas en pijnboompitten fijn met olijfolie en citroen.</li>
+                            <li>Serveer de soep met een lepel pesto in het midden.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+</html>
+y>
 </html>

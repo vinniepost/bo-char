@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Intersection Observer for scroll animations
-    const revealElements = document.querySelectorAll('.impact-card, .help-item, .bewust-text, .bewust-visual');
+    const revealElements = document.querySelectorAll('.recipe-card, .stat-box, .lifestyle-text, .glass-box-wide, .testimonial-box');
     
     const revealCallback = (entries, observer) => {
         entries.forEach(entry => {
@@ -31,15 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const options = {
-        threshold: 0.15
+        threshold: 0.1
     };
 
     const observer = new IntersectionObserver(revealCallback, options);
 
     revealElements.forEach(el => {
         el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'all 0.6s ease-out';
+        el.style.transform = 'translateY(40px)';
+        el.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
         observer.observe(el);
     });
 
@@ -57,13 +57,49 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+            header.style.boxShadow = '0 10px 30px rgba(0,0,0,0.05)';
             header.style.padding = '0.75rem 0';
         } else {
+            header.style.background = 'var(--glass)';
             header.style.boxShadow = 'none';
             header.style.padding = '1rem 0';
         }
     });
 
-    console.log('Samen Sterk platform geladen.');
+    // Recipe Modals Logic
+    const modalButtons = document.querySelectorAll('.btn-modal');
+    const closeButtons = document.querySelectorAll('.close-modal');
+    const modals = document.querySelectorAll('.modal');
+
+    modalButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const modalId = btn.getAttribute('data-target');
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            }
+        });
+    });
+
+    closeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const modal = btn.closest('.modal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+    });
+
+    // Close on outside click
+    window.addEventListener('click', (e) => {
+        modals.forEach(modal => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    });
+
+    console.log('De Kankergids - Website geladen.');
 });
